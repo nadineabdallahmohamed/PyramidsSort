@@ -12,7 +12,7 @@ import java.util.List;
 
 
 
-public class PyramidDAO {
+public class D_Pyramids {
 	
 	public List<Pyramidwithsort.Pyramid> readcsv(String path) throws FileNotFoundException  {
 		BufferedReader br=new BufferedReader(new FileReader(path));
