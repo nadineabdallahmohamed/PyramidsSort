@@ -1,12 +1,12 @@
 package SortedPyramids;
-public class Pyramid {
+public class Sort {
 	
 	protected String pharaoh;
 	protected String modern_name;
 	protected String site;
 	protected double height;
 	
-	public Pyramid( String pharaoh,String modern_name, String site, double height)
+	public Sort( String pharaoh,String modern_name, String site, double height)
 	{
 		this.height=height;
 		this.modern_name=modern_name;
