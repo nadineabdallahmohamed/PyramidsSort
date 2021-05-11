@@ -1,4 +1,4 @@
-package Pyramidwithsort;
+package SortedPyramids;
 public class Pyramid {
 	
 	protected String pharaoh;
