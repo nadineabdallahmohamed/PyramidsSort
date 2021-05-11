@@ -11,8 +11,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		List<Pyramid> pyramids =new LinkedList<Pyramid>();
-		PyramidDAO pr = new PyramidDAO();
+		List<Sort> pyramids =new LinkedList<Sort>();
+		D_Pyramids pr = new D_Pyramids();
 		try {
 			 pyramids = pr.readcsv("C:\\java\\pyramids_sort.csv");
 		} catch (FileNotFoundException e) {
@@ -23,10 +23,10 @@ public class Main {
 		  Collections.sort(pyramids, new Pyramidsort().reversed());
 		  
 		  int i =1;
-	        for(Pyramid p: pyramids) {
+	        for(Sort p: pyramids) {
 	           System.out.println("#"+(i++)+","+p.getPharaoh()+"," + p.getModern_name()+","+p.getSite()+","+p.getHeight());}
 	        Map < String, Integer > NumOfSites= new LinkedHashMap<>();
-	         for(Pyramid p: pyramids)
+	         for(Sort p: pyramids)
 	         {
 	             String site = p.getSite();
 	             Integer counter = NumOfSites.get(site);
