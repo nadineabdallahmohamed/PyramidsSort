@@ -14,10 +14,10 @@ import java.util.List;
 
 public class D_Pyramids {
 	
-	public List<Pyramidwithsort.Pyramid> readcsv(String path) throws FileNotFoundException  {
+	public List<Sorted_Pyramids.Sort> readcsv(String path) throws FileNotFoundException  {
 		BufferedReader br=new BufferedReader(new FileReader(path));
 		String line="";
-		List<Pyramid> p_list=new LinkedList<Pyramid>();
+		List<Sort> p_list=new LinkedList<Sort>();
 		
 		
 		try {
@@ -43,13 +43,13 @@ public class D_Pyramids {
 			String [] parts=line.split(",");
 			if (parts[7].isEmpty()) {
 				
-				p_list.add(new Pyramid(parts[0],parts[2],parts[4],Double.parseDouble("20")));
+				p_list.add(new Sort(parts[0],parts[2],parts[4],Double.parseDouble("20")));
 				
 			}
 			else
 				
 			  {
-				p_list.add(new Pyramid(parts[0],parts[2],parts[4],Double.parseDouble(parts[7])));
+				p_list.add(new Sort(parts[0],parts[2],parts[4],Double.parseDouble(parts[7])));
 				
 			  }
 		}}while(line!=null);
@@ -57,10 +57,10 @@ public class D_Pyramids {
 	return p_list;   	
 	}
 	
-public Pyramid  createpyramid(String [] data)
+public Sort createpyramid(String [] data)
 	
 	{
-		return new Pyramid(data[0],data[2],data[4],Double.parseDouble(data[7]));
+		return new Sort(data[0],data[2],data[4],Double.parseDouble(data[7]));
 		
 	}
     
