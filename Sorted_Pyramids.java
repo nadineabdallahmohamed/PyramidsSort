@@ -1,4 +1,4 @@
-package SortedPyramids;
+package PyramidsSort;
 
 import java.util.Comparator;
 
