@@ -1,4 +1,4 @@
-package SortedPyramids;
+package PyramidsSort;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
